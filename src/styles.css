@@ -16,3 +16,7 @@ body {
 .mat-toolbar {
   background-color: #ededed;
 }
+
+.v-alignment {
+  vertical-align: middle;
+}
