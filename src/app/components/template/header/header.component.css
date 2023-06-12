@@ -1,7 +1,7 @@
 .header {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .header a {
@@ -16,7 +16,7 @@
 
 .header .title-group {
   padding-left: 25px;
-  color: #4c4c4c
+  color: #4c4c4c;
 }
 
 .header .title-group i {
@@ -26,7 +26,3 @@
 /* .header .material-icons {
   color: #fff
 } */
-
-.mat-toolbar { 
-  background-color: #ededed;
-}
