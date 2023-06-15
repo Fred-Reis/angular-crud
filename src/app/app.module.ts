@@ -15,15 +15,20 @@ import { HomeComponent } from "./views/home/home.component";
 import { NavComponent } from "./components/template/nav/nav.component";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { FooterComponent } from "./components/template/footer/footer.component";
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+
+import { RedDirective } from "./directives/red.directive";
+import { ForDirective } from './directives/for.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
+    RedDirective,
     NavComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
     ProductCrudComponent,
+    ForDirective,
   ],
   imports: [
     BrowserModule,
