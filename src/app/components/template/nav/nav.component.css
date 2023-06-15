@@ -6,3 +6,9 @@
 .sidenav i {
   margin-right: 5px;
 }
+
+.content {
+  padding: 16px;
+  background-color: #fff;
+  color: #4d4d4d;
+}
