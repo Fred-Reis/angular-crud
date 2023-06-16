@@ -6,6 +6,10 @@ import {
   ViewContainerRef,
 } from "@angular/core";
 
+/**
+ * Structural directive Example
+ */
+
 @Directive({
   selector: "[myFor]",
 })

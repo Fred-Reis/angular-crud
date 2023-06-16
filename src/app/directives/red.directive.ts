@@ -1,5 +1,9 @@
 import { Directive, ElementRef } from "@angular/core";
 
+/**
+ * Attribute directive Example
+ */
+
 @Directive({
   selector: "[appRed]",
 })

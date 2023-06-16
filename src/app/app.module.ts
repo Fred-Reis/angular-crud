@@ -4,8 +4,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
+import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -18,25 +20,29 @@ import { FooterComponent } from "./components/template/footer/footer.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
 
 import { RedDirective } from "./directives/red.directive";
-import { ForDirective } from './directives/for.directive';
+import { ForDirective } from "./directives/for.directive";
+import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 @NgModule({
   declarations: [
     AppComponent,
+    ForDirective,
     RedDirective,
     NavComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
     ProductCrudComponent,
-    ForDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatListModule,
+    MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
     AppRoutingModule,
+    MatSnackBarModule,
     BrowserAnimationsModule,
   ],
   providers: [],
