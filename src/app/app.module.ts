@@ -1,14 +1,17 @@
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
+import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -23,6 +26,7 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 import { RedDirective } from "./directives/red.directive";
 import { ForDirective } from "./directives/for.directive";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,17 +38,21 @@ import { ProductCreateComponent } from "./components/product/product-create/prod
     FooterComponent,
     ProductCrudComponent,
     ProductCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     MatCardModule,
     MatListModule,
+    MatInputModule,
     MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
     HttpClientModule,
     AppRoutingModule,
     MatSnackBarModule,
+    MatFormFieldModule,
     BrowserAnimationsModule,
   ],
   providers: [],

@@ -11,8 +11,8 @@ import { Product } from "../product.model";
 })
 export class ProductCreateComponent {
   product: Product = {
-    name: "Test Product",
-    price: 0.0,
+    name: "",
+    price: 0,
   };
 
   constructor(private ProductService: ProductService, private router: Router) {}
