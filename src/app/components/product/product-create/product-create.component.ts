@@ -12,7 +12,7 @@ import { Product } from "../product.model";
 export class ProductCreateComponent {
   product: Product = {
     name: "",
-    price: 0,
+    price: null,
   };
 
   constructor(private ProductService: ProductService, private router: Router) {}
