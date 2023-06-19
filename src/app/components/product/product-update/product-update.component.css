@@ -1,0 +1,22 @@
+mat-card {
+  background-color: transparent;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: #9f9f9f !important;
+}
+
+input {
+  color: #3b3b3b !important;
+}
+
+button {
+  width: 200px;
+  margin-bottom: 5px;
+}
